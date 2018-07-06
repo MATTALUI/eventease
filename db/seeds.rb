@@ -24,3 +24,6 @@ r1.save
 
 r2 = Role.new({:title => "Cat Enthusiast", :event_id => e.id, :organization_id => o.id, :start_time => (Time.now + 4.hours), :end_time => (Time.now + 6.hours)})
 r2.save
+
+r3 = Role.new({:title => "Enforcer", :volunteer_id => u.id, :event_id => e.id, :organization_id => o.id, :start_time => (Time.now + 4.hours), :end_time => (Time.now + 6.hours)})
+r3.save

@@ -5,6 +5,6 @@ class User < ApplicationRecord
   scope :registered, -> {where({:luser=>false})}
 
   def to_s
-    return [self.first_name, self.last_name].compact.join(' ')
+    return [self.first_name, self.last_name].reject(&:blank?).join(' ')
   end
 end
